@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/from_settings"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="26dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_gravity="start|center_vertical"
+            android:scaleType="centerCrop"
+            android:src="@drawable/refund"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/settings"
+            android:textColor="@color/yp_black"
+            android:textSize="@dimen/headingSize" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonSize">
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="@dimen/buttonSize"
+            android:backgroundTint="@color/white"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:padding="16dp"
+            android:gravity="start|center_vertical"
+            android:text="@string/dark_theme"
+            android:textAllCaps="false"
+            android:textColor="@color/black0"
+            android:textSize="@dimen/textSize" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="6dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml"/>
+    </FrameLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonSize"
+        android:backgroundTint="@color/white"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        app:icon="@drawable/share"
+        app:iconGravity="end"
+        app:iconTint="@color/yp_text_gray"
+        android:gravity="start|center_vertical"
+        android:text="@string/share"
+        android:textAllCaps="false"
+        android:textColor="@color/black0"
+        android:textSize="@dimen/textSize"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonSize"
+        android:backgroundTint="@color/white"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        app:icon="@drawable/support"
+        app:iconGravity="end"
+        app:iconTint="@color/yp_text_gray"
+        android:gravity="start|center_vertical"
+        android:text="@string/write"
+        android:textAllCaps="false"
+        android:textColor="@color/black0"
+        android:textSize="@dimen/textSize"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttonSize"
+        android:backgroundTint="@color/white"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        app:icon="@drawable/arrow"
+        app:iconGravity="end"
+        app:iconTint="@color/yp_text_gray"
+        android:gravity="start|center_vertical"
+        android:text="@string/agreement"
+        android:textAllCaps="false"
+        android:textColor="@color/black0"
+        android:textSize="@dimen/textSize"/>
+
+</LinearLayout>

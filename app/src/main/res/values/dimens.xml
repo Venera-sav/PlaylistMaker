@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize">16sp</dimen>
+    <dimen name="headingSize">22sp</dimen>
+    <dimen name="buttonSize">61dp</dimen>
+    <dimen name="indent">7dp</dimen>
+
+</resources>
