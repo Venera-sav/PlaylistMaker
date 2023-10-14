@@ -39,7 +39,7 @@
             android:layout_width="300dp"
             android:layout_height="@dimen/buttonSize"
             android:backgroundTint="@color/white"
-
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:padding="16dp"
             android:gravity="start|center_vertical"
             android:text="@string/dark_theme"
@@ -51,6 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="6dp"
             tools:ignore="UseSwitchCompatOrMaterialXml"/>
     </FrameLayout>
 
@@ -58,6 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/buttonSize"
         android:backgroundTint="@color/white"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
         app:icon="@drawable/share"
         app:iconGravity="end"
         app:iconTint="@color/yp_text_gray"
@@ -71,6 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/buttonSize"
         android:backgroundTint="@color/white"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
         app:icon="@drawable/support"
         app:iconGravity="end"
         app:iconTint="@color/yp_text_gray"
@@ -84,6 +87,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/buttonSize"
         android:backgroundTint="@color/white"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
         app:icon="@drawable/arrow"
         app:iconGravity="end"
         app:iconTint="@color/yp_text_gray"
