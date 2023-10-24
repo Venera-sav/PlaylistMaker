@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<style name="ButtonMain" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+    <item name="android:backgroundTint">@color/white</item>
+    <item name="cornerRadius">16dp</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textColor">@color/yp_black</item>
+    <item name="android:textSize">@dimen/headingSize</item>
+    <item name="android:fontFamily">@font/ys_display_medium</item>
+    <item name="android:textFontWeight">500</item>
+    <item name="android:stateListAnimator">@null</item>
+    <item name="iconGravity">textStart</item>
+    <item name="iconTint">@color/yp_black</item>
+</style>
+
+    <style name="ButtonSettings">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/black0</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:fontFamily">@font/ys_display_regular</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="iconGravity">end</item>
+        <item name="iconTint">@color/yp_text_gray</item>
+    </style>
+
+    <style name="ScreenSettings">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="HeadingSettings">
+        <item name="android:textColor">@color/yp_black</item>
+    </style>
+
+    <style name="MySwitch" parent="Theme.AppCompat.Light">
+        <!--активное состояние ползунка -->
+        <item name="colorControlActivated">@color/yp_blue</item>
+
+        <!-- неактивное состояние ползунка -->
+        <item name="colorSwitchThumbNormal">@color/yp_text_gray</item>
+
+        <!-- цвет дорожки для неактивного состояния  -->
+        <item name="android:colorForeground">@color/yp_light_gray</item>
+    </style>
+
+    <style name="ScreenMain">
+        <item name="android:background">@color/yp_blue</item>
+    </style>
+
+    <style name="RefundSettings">
+        <item name="iconTint">@color/yp_black</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:fontFamily">@font/ys_display_medium</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="HeadingSearch">
+        <item name="android:textColor">@color/yp_black</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:tint">@color/yp_black</item>
+        <item name="android:fontFamily">@font/ys_display_medium</item>
+        <item name="android:textFontWeight">500</item>
+    </style>
+
+    <style name="EditTextSearch">
+        <item name="android:background">@drawable/search_line</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:drawableTint">@color/yp_text_gray</item>
+        <item name="android:fontFamily">@font/ys_display_regular</item>
+        <item name="android:textColorHint">@color/yp_text_gray</item>
+        <item name="android:textFontWeight">400</item>
+        <item name="android:textColor">@color/yp_black</item>
+    </style>
+
+</resources>
+

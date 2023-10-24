@@ -11,11 +11,10 @@ class MediatechActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mediatech)
 
-        val from_mediatech_button = findViewById<LinearLayout>(R.id.from_mediatech)
+        val fromMediatechButton = findViewById<LinearLayout>(R.id.fromMediatech)
 
-        from_mediatech_button.setOnClickListener {
-            val displayIntent = Intent(this, MainActivity::class.java)
-            startActivity(displayIntent)
+        fromMediatechButton.setOnClickListener {
+            finish()
         }
     }
 }

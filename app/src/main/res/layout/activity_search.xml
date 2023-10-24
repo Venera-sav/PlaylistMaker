@@ -2,39 +2,67 @@
 
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/ScreenSettings">
 
     <LinearLayout
-        android:id="@+id/from_search"
+        android:id="@+id/fromSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/yp_blue">
+        style="@style/ScreenSettings">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
             android:layout_gravity="start|center_vertical"
             android:scaleType="centerCrop"
-            android:src="@drawable/refund"/>
+            android:src="@drawable/refund"
+            style="@style/HeadingSearch"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="@string/back"
-            android:textColor="@color/yp_black"
-            android:textSize="@dimen/headingSize" />
+            android:paddingLeft="10dp"
+            android:text="@string/search"
+            style="@style/HeadingSearch"/>
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/message"
+    <FrameLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:text="@string/anons_search"
-        android:textSize="30sp"
-        android:textColor="@color/black"/>
+        android:layout_marginTop="56dp"
+        android:orientation="horizontal"
+        android:padding="16dp">
+    <EditText
+        android:id="@+id/inputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        style="@style/EditTextSearch"
+        android:inputType="text"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="8dp"
+        android:hint="Поиск"
+        android:lines="2"
+        android:maxLength="50"/>
+
+        <ImageView
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:src="@drawable/clear_button"
+            android:tint="@color/yp_black"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            tools:ignore="UseAppTint" />
+
+    </FrameLayout>
 
 </FrameLayout>
