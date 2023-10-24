@@ -17,13 +17,12 @@ import android.widget.LinearLayout
 
 class SearchActivity() : AppCompatActivity() {
 
-    private var searchText: String = TEXT_DEF
+    private var searchText: String = ""
     private lateinit var inputEditText: EditText
 
     companion object {
-        const val TEXT_DEF = ""
-        const val SEARCH_TEXT = "SEARCH_TEXT"
-    }
+    private val SEARCH_TEXT = "SEARCH_TEXT"
+        }
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
@@ -43,11 +42,17 @@ class SearchActivity() : AppCompatActivity() {
             finish()
         }
 
+        editInputText.setText(searchText)
+
         clearButton.setOnClickListener {
             editInputText.setText("")
             inputMethodManager?.hideSoftInputFromWindow(findViewById<EditText>(R.id.inputEditText).getWindowToken(), 0)
         }
 
+        if (savedInstanceState != null) {
+            searchText = savedInstanceState.getString(SEARCH_TEXT).toString()
+
+        }
 
         val simpleTextWatcher = object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
@@ -56,7 +61,7 @@ class SearchActivity() : AppCompatActivity() {
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 clearButton.visibility = clearButtonVisibility(s)
-
+                searchText = s.toString()
             }
 
             override fun afterTextChanged(s: Editable?) {
