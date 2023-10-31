@@ -21,12 +21,17 @@ class SearchActivity() : AppCompatActivity() {
     private lateinit var inputEditText: EditText
 
     companion object {
-    private val SEARCH_TEXT = "SEARCH_TEXT"
+    const val SEARCH_TEXT = "SEARCH_TEXT"
         }
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putString(SEARCH_TEXT, searchText)
+    }
+
+    override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        searchText = savedInstanceState.getString(SEARCH_TEXT, searchText)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
