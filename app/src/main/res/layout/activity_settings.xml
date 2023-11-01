@@ -6,29 +6,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white">
+    style="@style/ScreenSettings">
 
     <LinearLayout
-        android:id="@+id/from_settings"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginBottom="26dp">
 
-        <ImageView
+        <Button
+            android:id="@+id/fromSettings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="0dp"
             android:layout_gravity="start|center_vertical"
             android:scaleType="centerCrop"
-            android:src="@drawable/refund"/>
+            app:icon="@drawable/refund"
+            style="@style/RefundSettings"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:text="@string/settings"
-            android:textColor="@color/yp_black"
-            android:textSize="@dimen/headingSize" />
+            style="@style/HeadingSettings"
+            android:textSize="@dimen/headingSize"
+            android:fontFamily="@font/ys_display_medium"
+            android:textFontWeight="500"/>
 
     </LinearLayout>
 
@@ -38,63 +41,42 @@
         <Button
             android:layout_width="300dp"
             android:layout_height="@dimen/buttonSize"
-            android:backgroundTint="@color/white"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
-            android:padding="16dp"
-            android:gravity="start|center_vertical"
-            android:text="@string/dark_theme"
-            android:textAllCaps="false"
-            android:textColor="@color/black0"
-            android:textSize="@dimen/textSize" />
+            style="@style/ButtonSettings"
+            android:text="@string/darkTheme"/>
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swithTheme"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right|center_vertical"
-            android:layout_marginRight="6dp"
+            android:layout_marginRight="14dp"
+            android:theme="@style/MySwitch"
+            android:checked="false"
             tools:ignore="UseSwitchCompatOrMaterialXml"/>
     </FrameLayout>
 
     <Button
+        android:id="@+id/shareApp"
         android:layout_width="match_parent"
         android:layout_height="@dimen/buttonSize"
-        android:backgroundTint="@color/white"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        style="@style/ButtonSettings"
         app:icon="@drawable/share"
-        app:iconGravity="end"
-        app:iconTint="@color/yp_text_gray"
-        android:gravity="start|center_vertical"
-        android:text="@string/share"
-        android:textAllCaps="false"
-        android:textColor="@color/black0"
-        android:textSize="@dimen/textSize"/>
+        android:text="@string/share"/>
 
     <Button
+        android:id="@+id/writeToSupport"
         android:layout_width="match_parent"
         android:layout_height="@dimen/buttonSize"
-        android:backgroundTint="@color/white"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        style="@style/ButtonSettings"
         app:icon="@drawable/support"
-        app:iconGravity="end"
-        app:iconTint="@color/yp_text_gray"
-        android:gravity="start|center_vertical"
-        android:text="@string/write"
-        android:textAllCaps="false"
-        android:textColor="@color/black0"
-        android:textSize="@dimen/textSize"/>
+        android:text="@string/write"/>
 
     <Button
+        android:id="@+id/agreementVeb"
         android:layout_width="match_parent"
         android:layout_height="@dimen/buttonSize"
-        android:backgroundTint="@color/white"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        style="@style/ButtonSettings"
         app:icon="@drawable/arrow"
-        app:iconGravity="end"
-        app:iconTint="@color/yp_text_gray"
-        android:gravity="start|center_vertical"
-        android:text="@string/agreement"
-        android:textAllCaps="false"
-        android:textColor="@color/black0"
-        android:textSize="@dimen/textSize"/>
+        android:text="@string/agreement"/>
 
 </LinearLayout>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/from_mediatech"
+        android:id="@+id/fromMediatech"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/yp_blue">
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="@string/anons_media"
+        android:text="@string/anonsMedia"
         android:textSize="30sp"
         android:textColor="@color/black"/>
 
